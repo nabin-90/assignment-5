@@ -6,6 +6,7 @@ const Nav = () => {
 
           {/* Logo */}
           <div className="flex items-center gap-2">
+            
             <div className="w-6 h-6 rounded-md bg-linear-to-br from-purple-500 to-pink-500 flex items-center justify-center">
               <span className="text-white text-[10px] font-bold">
                 DS
