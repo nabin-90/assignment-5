@@ -3,7 +3,7 @@ import bannerImage from "../assets/banner-stack.png";
 const Banner = () => {
   return (
     <section className="w-full bg-white">
-      <div className="mx-auto flex min-h-[445px] max-w-[1160px] items-center justify-between gap-10 px-6 py-12 lg:px-0">
+      <div className=" mx-auto flex min-h-[445px] max-w-[1160px] items-center justify-between gap-10 px-6 py-12 lg:px-0">
         
         {/* Left Content */}
         <div className="max-w-[590px]">
