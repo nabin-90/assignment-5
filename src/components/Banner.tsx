@@ -4,17 +4,17 @@ const Banner = () => {
   return (
     <section className="w-full bg-white">
       <div
-        className="
-          mx-auto flex max-w-[1160px]
-          flex-col items-center justify-between
-          gap-10
-          px-5 py-10
-          sm:px-6 sm:py-12
-          md:flex-row
-          md:py-14
-          lg:px-0
-        "
-      >
+  className="
+    mx-auto flex max-w-7xl
+    flex-col items-center justify-between
+    gap-10
+    px-4 py-10
+    sm:px-6 sm:py-12
+    md:flex-row
+    md:py-14
+    lg:px-4
+  "
+>
         {/* Left Content */}
         <div className="w-full max-w-[590px] text-center md:text-left">
           <h1

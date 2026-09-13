@@ -28,11 +28,11 @@ const Nav = () => {
 
           {/* Right - Buttons */}
           <div className="ml-auto flex items-center gap-3">
-            <button className="text-sm font-medium text-gray-600">
+            <button className="text-sm text-gray-600 transition-all duration-300 hover:-translate-y-0.5 hover:text-pink-500">
               Sign In
             </button>
 
-            <button className="rounded-full bg-pink-500 px-4 py-2 text-sm font-medium text-white">
+            <button className="rounded-full bg-pink-500 px-4 py-2 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-pink-600 hover:shadow-lg">
               Sign Up
             </button>
           </div>
@@ -90,11 +90,11 @@ const Nav = () => {
 
           {/* Buttons */}
           <div className="flex items-center gap-5">
-            <button className="text-sm text-gray-600">
+            <button className="text-sm text-gray-600 transition-all duration-300 hover:-translate-y-0.5 hover:text-pink-500">
               Sign In
             </button>
 
-            <button className="rounded-full bg-pink-500 px-5 py-2 text-sm font-medium text-white">
+            <button className="rounded-full bg-pink-500 px-5 py-2 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-pink-600 hover:shadow-lg">
               Sign Up
             </button>
           </div>

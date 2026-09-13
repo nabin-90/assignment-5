@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="border-t border-slate-100 bg-white">
-      <div className="mx-auto max-w-[1080px] px-6 pt-12 md:px-0 md:pt-14">
+      <div className="mx-auto max-w-7xl px-4 pt-12 sm:px-6 md:pt-14 lg:px-4">
 
         {/* Main Footer */}
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr]">
