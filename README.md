@@ -130,3 +130,9 @@ In my project, I used it to show an empty message when no technology has been ad
     <div key={technology.id}>{technology.name}</div>
   ))
 )}
+
+---
+
+### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+
+Data is passed from parent to child using props. The child can send something back by calling a function passed through props.
