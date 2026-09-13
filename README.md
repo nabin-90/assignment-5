@@ -22,7 +22,16 @@ The `key` helps React tell each item apart and update the list properly.
 
 ### 6. What is conditional rendering? Show one place you used it.
 
-Conditional rendering means showing something based on a condition. I used it to show a message when my stack is empty.
+Conditional rendering means showing something based on a condition. In my project, I used it to show an empty message when no technology has been added to the stack.
+
+```tsx
+{selectedTechnologies.length === 0 ? (
+  <p>Your stack is empty. Add some technologies!</p>
+) : (
+  selectedTechnologies.map((technology) => (
+    <div key={technology.id}>{technology.name}</div>
+  ))
+)}
 
 ### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
