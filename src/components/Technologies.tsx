@@ -16,7 +16,7 @@ const Technologies = ({ technologyPromise }: TechnologiesProps) => {
 
   const handleAddToStack = (technology: ITechnology) => {
     const alreadySelected = selectedTechnologies.some(
-      (tech) => tech.id === technology.id
+      (tech) => tech.id === technology.id,
     );
 
     if (alreadySelected) return;
@@ -25,9 +25,7 @@ const Technologies = ({ technologyPromise }: TechnologiesProps) => {
   };
 
   const handleRemove = (id: string) => {
-    setSelectedTechnologies((prev) =>
-      prev.filter((tech) => tech.id !== id)
-    );
+    setSelectedTechnologies((prev) => prev.filter((tech) => tech.id !== id));
   };
 
   const handleRemoveAll = () => {
@@ -57,6 +55,7 @@ const Technologies = ({ technologyPromise }: TechnologiesProps) => {
               key={technology.id}
               technology={technology}
               onAdd={handleAddToStack}
+              selectedTechnologies={selectedTechnologies}
             />
           ))}
         </div>

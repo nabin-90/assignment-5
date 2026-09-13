@@ -1,15 +1,28 @@
 import { FaStar } from "react-icons/fa";
+import toast from "react-hot-toast";
 import type { ITechnology } from "../../type/technologyType";
 
 interface TechnologyCardProps {
   technology: ITechnology;
   onAdd: (technology: ITechnology) => void;
+  selectedTechnologies: ITechnology[];
 }
 
 const TechnologyCard = ({
   technology,
   onAdd,
+  selectedTechnologies,
 }: TechnologyCardProps) => {
+  // Check if technology is already added
+  const isAdded = selectedTechnologies.some(
+    (item) => item.id === technology.id,
+  );
+
+  const handleAdd = () => {
+    onAdd(technology);
+    toast.success(`${technology.name} added to your stack!`);
+  };
+
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
       {/* Top */}
@@ -53,10 +66,15 @@ const TechnologyCard = ({
 
       {/* Button */}
       <button
-        onClick={() => onAdd(technology)}
-        className="mt-4 w-full rounded-lg bg-slate-950 py-2.5 text-sm font-medium text-white transition hover:bg-slate-800"
+        onClick={handleAdd}
+        disabled={isAdded}
+        className={`mt-4 w-full rounded-lg py-2.5 text-sm font-medium transition ${
+          isAdded
+            ? "cursor-default bg-white text-pink-700"
+            : "bg-slate-950 text-white hover:bg-slate-800"
+        }`}
       >
-        Add to Stack
+        {isAdded ? "✓ Added to Stack" : "Add to Stack"}
       </button>
     </div>
   );
