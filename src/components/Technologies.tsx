@@ -25,7 +25,9 @@ const Technologies = ({ technologyPromise }: TechnologiesProps) => {
   };
 
   const handleRemove = (id: string) => {
-    setSelectedTechnologies((prev) => prev.filter((tech) => tech.id !== id));
+    setSelectedTechnologies((prev) =>
+      prev.filter((tech) => tech.id !== id),
+    );
   };
 
   const handleRemoveAll = () => {
@@ -33,23 +35,27 @@ const Technologies = ({ technologyPromise }: TechnologiesProps) => {
   };
 
   return (
-    <section className="max-w-7xl container mx-auto px-4 lg:px-0">
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold text-slate-900">
+    <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
+
+      {/* Section Heading */}
+      <div className="mb-6 sm:mb-8">
+        <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
           Explore{" "}
           <span className="bg-linear-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
             Technologies
           </span>
         </h2>
 
-        <p className="mt-2 text-sm text-slate-500">
+        <p className="mt-2 max-w-xl text-xs leading-5 text-slate-500 sm:text-sm sm:leading-6">
           Pick one technology per category to build your ideal stack.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_280px]">
+      {/* Main Layout */}
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_280px] lg:gap-8">
+
         {/* Technology Cards */}
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 xl:grid-cols-3">
           {technologies.map((technology) => (
             <TechnologyCard
               key={technology.id}
