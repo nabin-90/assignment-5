@@ -35,7 +35,7 @@ const Technologies = ({ technologyPromise }: TechnologiesProps) => {
   };
 
   return (
-    <section className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-4">
+    <section className="container mx-auto max-w-7xl px-4 pb-15 sm:px-6 lg:px-4">
 
       {/* Section Heading */}
       <div className="mb-6 sm:mb-8">
