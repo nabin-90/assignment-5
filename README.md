@@ -71,3 +71,61 @@ The goal of DevStack is to provide developers with a simple and interactive way 
 **Mahmudun Nabin**
 
 Built with ❤️ using React, TypeScript & Tailwind CSS.
+
+
+## ❓ React Questions & Answers
+
+### 1. What is the difference between props and state?
+
+Props are used to pass data from one component to another. They are basically read-only.
+
+State is used to store data inside a component, and we can change it when needed.
+
+---
+
+### 2. What is JSX, and why is it used in React?
+
+JSX lets us write HTML-like code inside JavaScript/TypeScript.
+
+It makes writing React UI easier and more readable.
+
+---
+
+### 3. What does the `useState` hook do, and where did you use it in this project?
+
+`useState` is used to store and update data in a component.
+
+In my project, I used it to keep track of the technologies that I added to my stack.
+
+---
+
+### 4. What does the `useEffect` hook do, and why did you need it to load the JSON data?
+
+`useEffect` is used to run some code after a component renders, like fetching data.
+
+**In my project, I didn't use `useEffect` for this. I used React `Suspense` to handle the loading state while the JSON data was being fetched.**
+
+---
+
+### 5. Why does every item in a `.map()` list need a unique `key` prop?
+
+The `key` helps React identify each item in a list.
+
+It helps React know which item was changed, added, or removed.
+
+---
+
+### 6. What is conditional rendering? Show one place you used it.
+
+Conditional rendering means showing something different depending on a condition.
+
+In my project, I used it to show an empty message when no technology has been added to the stack.
+
+```tsx
+{selectedTechnologies.length === 0 ? (
+  <p>Your stack is empty. Add some technologies!</p>
+) : (
+  selectedTechnologies.map((technology) => (
+    <div key={technology.id}>{technology.name}</div>
+  ))
+)}
