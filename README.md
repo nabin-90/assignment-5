@@ -72,6 +72,7 @@ The goal of DevStack is to provide developers with a simple and interactive way 
 
 Built with ❤️ using React, TypeScript & Tailwind CSS.
 
+---
 
 ## ❓ React Questions & Answers
 
