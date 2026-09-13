@@ -1,5 +1,5 @@
 import { FaStar } from "react-icons/fa";
-import toast from "react-hot-toast";
+import { toast } from "react-toastify";
 import type { ITechnology } from "../../type/technologyType";
 
 interface TechnologyCardProps {
@@ -19,6 +19,11 @@ const TechnologyCard = ({
   );
 
   const handleAdd = () => {
+    if (isAdded) {
+      toast.error(`${technology.name} is already in your stack!`);
+      return;
+    }
+
     onAdd(technology);
     toast.success(`${technology.name} added to your stack!`);
   };
@@ -54,9 +59,7 @@ const TechnologyCard = ({
           {technology.category}
         </span>
 
-        <span className="text-xs text-slate-500">
-          {technology.difficulty}
-        </span>
+        <span className="text-xs text-slate-500">{technology.difficulty}</span>
 
         <span className="flex items-center gap-1 text-xs font-medium text-slate-600">
           <FaStar className="text-yellow-400" />

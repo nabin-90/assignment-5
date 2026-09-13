@@ -1,11 +1,10 @@
 const Nav = () => {
   return (
-    <nav className="border-b border-gray-100 bg-white">
+    <nav className="sticky top-0 z-50 border-b border-gray-100 bg-white">
       <div className="mx-auto max-w-7xl px-4">
 
         {/* Mobile Navbar */}
-        <div className="relative flex h-20 items-center justify-between md:hidden">
-
+        <div className="grid h-20 grid-cols-[auto_1fr_auto] items-center gap-2 md:hidden">
           {/* Left - Hamburger */}
           <button className="flex flex-col gap-1.5">
             <span className="h-1 w-8 rounded bg-gray-500"></span>
@@ -14,44 +13,40 @@ const Nav = () => {
           </button>
 
           {/* Center - Logo */}
-          <div className="absolute left-1/2 flex -translate-x-1/2 items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-purple-500 to-pink-500">
-              <span className="text-lg font-bold text-white">
-                DS
-              </span>
+          <div className="flex min-w-0 items-center justify-center gap-2">
+            <div className="brand-gradient-bg flex h-10 w-10 shrink-0 items-center justify-center rounded-xl">
+              <span className="text-lg font-bold text-white">DS</span>
             </div>
 
-            <h2 className="text-xl font-bold text-gray-900">
-              Dev<span className="text-pink-500">Stack</span>
+            <h2 className="whitespace-nowrap text-lg font-bold text-gray-900">
+              Dev
+              <span className="brand-gradient-text">Stack</span>
             </h2>
           </div>
 
           {/* Right - Buttons */}
-          <div className="ml-auto flex items-center gap-3">
-            <button className="text-sm text-gray-600 transition-all duration-300 hover:-translate-y-0.5 hover:text-pink-500">
+          <div className="flex items-center gap-2">
+            <button className="whitespace-nowrap text-xs text-gray-600 transition-all duration-300 hover:-translate-y-0.5 hover:text-pink-500">
               Sign In
             </button>
 
-            <button className="rounded-full bg-pink-500 px-4 py-2 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-pink-600 hover:shadow-lg">
+            <button className="brand-gradient-bg whitespace-nowrap rounded-full px-3 py-2 text-xs font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">
               Sign Up
             </button>
           </div>
-
         </div>
 
         {/* Desktop Navbar */}
         <div className="hidden h-14 items-center justify-between md:flex">
-
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="flex h-6 w-6 items-center justify-center rounded-md bg-gradient-to-br from-purple-500 to-pink-500">
-              <span className="text-[10px] font-bold text-white">
-                DS
-              </span>
+            <div className="brand-gradient-bg flex h-6 w-6 items-center justify-center rounded-md">
+              <span className="text-[10px] font-bold text-white">DS</span>
             </div>
 
             <h2 className="text-lg font-bold text-gray-900">
-              Dev <span className="text-pink-500">Stack</span>
+              Dev{" "}
+              <span className="brand-gradient-text">Stack</span>
             </h2>
           </div>
 
@@ -64,7 +59,10 @@ const Nav = () => {
             </li>
 
             <li>
-              <a href="#technologies" className="text-gray-500 hover:text-pink-500">
+              <a
+                href="#technologies"
+                className="text-gray-500 hover:text-pink-500"
+              >
                 Technologies
               </a>
             </li>
@@ -94,11 +92,10 @@ const Nav = () => {
               Sign In
             </button>
 
-            <button className="rounded-full bg-pink-500 px-5 py-2 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-pink-600 hover:shadow-lg">
+            <button className="brand-gradient-bg rounded-full px-5 py-2 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">
               Sign Up
             </button>
           </div>
-
         </div>
       </div>
     </nav>

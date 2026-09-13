@@ -1,75 +1,73 @@
-# React + TypeScript + Vite
+# 🚀 DevStack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Build your ideal development stack by exploring, comparing, and selecting the right technologies for your next project.
 
-Currently, two official plugins are available:
+## 📖 About The Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**DevStack** is a modern and responsive web application that helps developers explore different technologies and build their ideal development stack.
 
-## React Compiler
+Users can browse frontend, backend, database, and development tools, compare their options, and add technologies to their personal stack.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The project is designed with a clean, modern UI and responsive layout for mobile, tablet, and desktop devices.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Technologies Used
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ⚛️ **React.js**
+- 📘 **TypeScript**
+- 🎨 **Tailwind CSS**
+- 🔔 **React-Toastify**
+- ⚡ **Vite**
+- 🧩 **React Icons**
+- 📄 **JSON** for technology data
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ✨ Features
 
-```
+### 1. 🔍 Explore Technologies
+Browse different development technologies with useful information such as:
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+- Technology name
+- Category
+- Difficulty level
+- Rating
+- Description
+- Technology badge
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 2. 🧩 Build Your Own Stack
+Add your favorite technologies to your personal **Your Stack** section.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+You can also remove individual technologies or remove all selected technologies at once.
 
-```
+### 3. 🔔 Interactive Notifications
+The application uses **React-Toastify** to provide instant feedback when:
+
+- A technology is added
+- A duplicate technology is selected
+- Technologies are removed
+
+---
+
+## 📱 Responsive Design
+
+DevStack is fully responsive and works smoothly across:
+
+- 📱 Mobile devices
+- 💻 Tablets
+- 🖥️ Desktop screens
+
+---
+
+## 🎯 Project Goal
+
+The goal of DevStack is to provide developers with a simple and interactive way to discover technologies and create a development stack that fits their project needs.
+
+---
+
+## 👨‍💻 Author
+
+**Mahmudun Nabin**
+
+Built with ❤️ using React, TypeScript & Tailwind CSS.

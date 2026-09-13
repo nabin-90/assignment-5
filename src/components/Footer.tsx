@@ -2,55 +2,43 @@ const Footer = () => {
   return (
     <footer className="border-t border-slate-100 bg-white">
       <div className="mx-auto max-w-7xl px-4 pt-12 sm:px-6 md:pt-14 lg:px-4">
-
         {/* Main Footer */}
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr]">
-
           {/* Brand */}
           <div className="sm:col-span-2 md:col-span-1 text-center md:text-left">
-
             {/* Logo */}
             <div className="flex items-center justify-center gap-2 md:justify-start">
-              <div className="flex h-[40px] w-[40px] items-center justify-center rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 text-[18px] font-bold text-white">
+              <div className="brand-gradient-bg flex h-[40px] w-[40px] items-center justify-center rounded-xl text-[18px] font-bold text-white">
                 DS
               </div>
 
               <h2 className="text-[28px] font-bold">
                 <span className="text-slate-900">Dev</span>
-                <span className="text-pink-500">Stack</span>
+                <span className="brand-gradient-text">Stack</span>
               </h2>
             </div>
 
             {/* Description */}
             <p className="mx-auto mt-5 max-w-[560px] text-[16px] leading-7 text-slate-500 md:mx-0 md:max-w-[360px] md:text-[12px] md:leading-5">
-              Curated tools, technologies, and resources for developers
-              building modern software.
+              Curated tools, technologies, and resources for developers building
+              modern software.
             </p>
 
             {/* Social Links */}
             <div className="mt-6 flex justify-center gap-7 text-[16px] font-medium text-slate-600 md:justify-start md:text-[12px] md:gap-5">
-              <a
-                href="#"
-                className="transition-colors hover:text-pink-500"
-              >
+              <a href="#" className="transition-colors hover:text-pink-500">
                 GitHub
               </a>
 
               <span className="text-slate-400 md:hidden">•</span>
 
-              <a
-                href="#"
-                className="transition-colors hover:text-pink-500"
-              >
+              <a href="#" className="transition-colors hover:text-pink-500">
                 Twitter
               </a>
 
               <span className="text-slate-400 md:hidden">•</span>
 
-              <a
-                href="#"
-                className="transition-colors hover:text-pink-500"
-              >
+              <a href="#" className="transition-colors hover:text-pink-500">
                 LinkedIn
               </a>
             </div>
@@ -159,32 +147,21 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-10 border-t border-slate-100">
           <div className="flex items-center justify-between gap-4 py-6 text-[14px] text-slate-400 md:text-[11px]">
-
             {/* Copyright */}
-            <p>
-              © 2026 Dev Stack. All rights reserved.
-            </p>
+            <p>© 2026 Dev Stack. All rights reserved.</p>
 
             {/* Bottom Links */}
             <div className="flex shrink-0 gap-5 md:gap-6">
-              <a
-                href="#"
-                className="transition-colors hover:text-slate-600"
-              >
+              <a href="#" className="transition-colors hover:text-slate-600">
                 Privacy
               </a>
 
-              <a
-                href="#"
-                className="transition-colors hover:text-slate-600"
-              >
+              <a href="#" className="transition-colors hover:text-slate-600">
                 Terms
               </a>
             </div>
-
           </div>
         </div>
-
       </div>
     </footer>
   );

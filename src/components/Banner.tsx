@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <section className="w-full bg-white">
       <div
-  className="
+        className="
     mx-auto flex max-w-7xl
     flex-col items-center justify-between
     gap-10
@@ -14,7 +14,7 @@ const Banner = () => {
     md:py-14
     lg:px-4
   "
->
+      >
         {/* Left Content */}
         <div className="w-full max-w-[590px] text-center md:text-left">
           <h1
@@ -31,10 +31,7 @@ const Banner = () => {
           >
             Build Your Ideal
             <br />
-
-            <span className="bg-linear-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-              Development Stack
-            </span>
+            <span className="brand-gradient-text">Development Stack</span>
           </h1>
 
           {/* Description */}
@@ -48,9 +45,9 @@ const Banner = () => {
               md:mx-0
             "
           >
-            Explore frontend, backend, database, and tooling options,
-            compare them side by side, and put together the stack that fits
-            your next project.
+            Explore frontend, backend, database, and tooling options, compare
+            them side by side, and put together the stack that fits your next
+            project.
           </p>
 
           {/* Buttons */}
@@ -67,7 +64,7 @@ const Banner = () => {
             <button
               className="
                 rounded-lg
-                bg-linear-to-r from-orange-500 to-pink-500
+                brand-gradient-bg
                 px-5 py-3
                 text-sm font-semibold text-white
                 transition-all duration-300
